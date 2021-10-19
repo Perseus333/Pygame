@@ -4,8 +4,8 @@ import random
 
 def main():
 
-    WIDTH = 600
-    HEIGHT = 400
+    WIDTH = 3000
+    HEIGHT = 1000
 
     WHITE = (255, 255, 255)
 
@@ -28,7 +28,8 @@ def main():
         screen = pygame.display.set_mode((WIDTH, HEIGHT))
         pygame.display.set_caption("Paint")
         screen.fill(WHITE)
-
+        
+        # The separation is the pixels allowed for the dot to move
         rand_x = random.randint(separation*-1, separation)
         rand_y = random.randint(separation*-1, separation)
 
